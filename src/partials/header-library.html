@@ -1,0 +1,81 @@
+<header class="header library">
+  <div class="header-library__container container">
+    <div class="header__tabs">
+      <div class="header__title-panel">
+        <a class="logo" href="./index.html">
+          <svg class="logo__icon">
+            <use href="/src/images/svg/icons.svg#film"></use>
+          </svg>
+          <span class="logo__title">Filmoteka</span>
+        </a>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__controls" data-controls>
+          <li><a href="./index.html" class="header__controls-item">Home</a></li>
+          <li><a href="./library.html" class="header__controls-item current">My Library</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header-library">
+      <ul class="header-library-buttons">
+        <li class="header-library-buttons__item">
+          <button
+            type="button"
+            class="header-library-buttons__button header-library-buttons__button--active"
+          >
+            watched
+          </button>
+        </li>
+
+        <li class="header-library-buttons__item">
+          <button type="button" class="header-library-buttons__button">queue</button>
+        </li>
+      </ul>
+    </div>
+    <form class="header__pane-search-form visually-hidden">
+      <label class="header__search-form-lab">
+        <input
+          type="text"
+          name="searchQuery"
+          placeholder="Movie search"
+          class="header__search-form-input"
+          autocomplete="off"
+        />
+      </label>
+      <button class="header__serach-form-btn" type="submit">
+        <svg class="header__serach-form-icon">
+          <use href="/src/images/svg/icons.svg#search"></use>
+        </svg>
+      </button>
+    </form>
+    <div class="header__lang--lib">
+      <button type="button" class="translate" id="e-lang-en" data-lang="en">EN</button>
+      <span class="translate__span">|</span>
+      <button type="button" class="translate" id="e-lang-pl" data-lang="pl">PL</button>
+    </div>
+    <div class="toolbar-library container">
+      <div class="theme-switch">
+        <svg class="theme-switch__icon" role="img" aria-label="Sun incon">
+          <use href="/src/images/svg/icons.svg#sun"></use>
+        </svg>
+
+        <div class="theme-switch__control">
+          <input
+            class="theme-switch__toggle day-night-switch"
+            type="checkbox"
+            name="theme"
+            id="theme-switch-toggle"
+            aria-label="Switch between dark and light theme"
+          />
+          <label aria-hidden="true" class="theme-switch__track" for="theme-switch-toggle"> </label>
+          <div aria-hidden="true" class="theme-switch__marker"></div>
+        </div>
+
+        <svg class="theme-switch__icon" aria-label="Moon icon">
+          <use href="/src/images/svg/icons.svg#moon"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</header>
